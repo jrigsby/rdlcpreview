@@ -2,6 +2,8 @@
 This is a sample c# application to preview a stand alone Client Report Definition (.rdlc) File or a standalone SQL report using a dataset saved as an xml file.
 This code is not maintained and is here purely for backup purposes as a sample project. Use it at your own risk.
 
+The code will read the .rdlc file for defined datasets and import them from the data.xml file with the appropriate names expected by the report.
+
 # Actions to be performed after clone to properly setup the solution
 There is an issue with adding SqlServerTypes to git repo not adding dlls
 https://github.com/FransBouma/RawDataAccessBencher/issues/37
