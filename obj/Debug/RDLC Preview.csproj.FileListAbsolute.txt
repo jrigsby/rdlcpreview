@@ -107,7 +107,6 @@ C:\Users\johnr.JR-XPS89\source\repos\Report Project1\ReportsApplication1\obj\Deb
 C:\Users\johnr.JR-XPS89\source\repos\Report Project1\ReportsApplication1\obj\Debug\RDLC Preview.csproj.CopyComplete
 C:\Users\johnr.JR-XPS89\source\repos\Report Project1\ReportsApplication1\obj\Debug\ReportsApplication1.exe
 C:\Users\johnr.JR-XPS89\source\repos\Report Project1\ReportsApplication1\obj\Debug\ReportsApplication1.pdb
-C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\obj\Debug\RDLC Preview.csprojAssemblyReference.cache
 C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\obj\Debug\ReportsApplication1.Form1.resources
 C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\obj\Debug\ReportsApplication1.Properties.Resources.resources
 C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\obj\Debug\RDLC Preview.csproj.GenerateResource.cache
