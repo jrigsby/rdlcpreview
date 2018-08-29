@@ -1,6 +1,6 @@
 # rdclpreview
-c# application to preview a SQL report local RDCL file using a dataset xml file
-This code is not maintained and is here purely for backup purposes as a sample project
+This is a sample c# application to preview a stand alone Client Report Definition (.rdlc) File or a standalone SQL report using a dataset saved as an xml file.
+This code is not maintained and is here purely for backup purposes as a sample project. Use it at your own risk.
 
 # Actions to be performed after clone to properly setup the solution
 There is an issue with adding SqlServerTypes to git repo not adding dlls
