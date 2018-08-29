@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TableOfContents">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderNum" type="xs:int" minOccurs="0" />
+              <xs:element name="ReportName" type="xs:string" minOccurs="0" />
+              <xs:element name="StartPageNum" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ReportOptions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PageNum" type="xs:int" minOccurs="0" />
+              <xs:element name="ShowPageNum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:length value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SystemUser">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserId" type="xs:int" minOccurs="0" />
+              <xs:element name="CompanyId" type="xs:int" minOccurs="0" />
+              <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="HomePhone" type="xs:string" minOccurs="0" />
+              <xs:element name="CellPhone" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Theme">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LogoUrl" type="xs:string" minOccurs="0" />
+              <xs:element name="CoverLogoUrl" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ThemeDark">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="21" />
+              <xs:element name="G" type="xs:unsignedByte" default="255" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ThemeMedium">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="33" />
+              <xs:element name="G" type="xs:unsignedByte" default="150" />
+              <xs:element name="B" type="xs:unsignedByte" default="255" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ThemeLight">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="255" />
+              <xs:element name="G" type="xs:unsignedByte" default="202" />
+              <xs:element name="B" type="xs:unsignedByte" default="249" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AccentColor1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="21" />
+              <xs:element name="G" type="xs:unsignedByte" default="255" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="HeaderTextColor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="21" />
+              <xs:element name="G" type="xs:unsignedByte" default="255" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FooterTextColor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="21" />
+              <xs:element name="G" type="xs:unsignedByte" default="255" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CategoryTextColor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="0" />
+              <xs:element name="G" type="xs:unsignedByte" default="0" />
+              <xs:element name="B" type="xs:unsignedByte" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IndexTextColor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="0" />
+              <xs:element name="G" type="xs:unsignedByte" default="0" />
+              <xs:element name="B" type="xs:unsignedByte" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AccentColor2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="192" />
+              <xs:element name="G" type="xs:unsignedByte" default="192" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AboveAvgColor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="192" />
+              <xs:element name="G" type="xs:unsignedByte" default="192" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AvgColor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="192" />
+              <xs:element name="G" type="xs:unsignedByte" default="192" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BelowAvgColor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="192" />
+              <xs:element name="G" type="xs:unsignedByte" default="192" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FailingColor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="R" type="xs:unsignedByte" default="192" />
+              <xs:element name="G" type="xs:unsignedByte" default="192" />
+              <xs:element name="B" type="xs:unsignedByte" default="192" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PlanDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="PlanName" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimaryContact" type="xs:string" minOccurs="0" />
+              <xs:element name="EIN" type="xs:string" minOccurs="0" />
+              <xs:element name="AddressLine1" type="xs:string" minOccurs="0" />
+              <xs:element name="AddressLine2" type="xs:string" minOccurs="0" />
+              <xs:element name="City" type="xs:string" minOccurs="0" />
+              <xs:element name="State" type="xs:string" minOccurs="0" />
+              <xs:element name="Zip" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" type="xs:string" minOccurs="0" />
+              <xs:element name="AsOfDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BalanceAsOfDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ParticipantCount" type="xs:int" minOccurs="0" />
+              <xs:element name="Balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="CustodyFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RecordkeepingFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TPAFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AdvisoryFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TrusteeFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OtherFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinimumFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RevShareFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SubTAFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TwelveB1Fee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Has12B1Fees" type="xs:boolean" minOccurs="0" />
+              <xs:element name="HasRevShrFees" type="xs:boolean" minOccurs="0" />
+              <xs:element name="HasSubTABpsFees" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TradingPlatform" type="xs:string" minOccurs="0" />
+              <xs:element name="RevShareAdjustmentFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinFeeUsed" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LoanBalance" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PlanFunds">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ticker" type="xs:string" minOccurs="0" />
+              <xs:element name="Balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RevShareBps" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SubTaBps" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SubTaDollars" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cusip" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FundData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cusip" type="xs:string" />
+              <xs:element name="AsOfDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NetExpenseRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TurnoverRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Top10HoldingWeighting" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DataFeedId" type="xs:int" minOccurs="0" />
+              <xs:element name="LegalName" type="xs:string" minOccurs="0" />
+              <xs:element name="InceptionDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FundTypeCd" type="xs:int" />
+              <xs:element name="Ticker" type="xs:string" minOccurs="0" />
+              <xs:element name="NumberOfHolding" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M3ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M0ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M0ReturnRank" type="xs:int" minOccurs="0" />
+              <xs:element name="M12ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12ReturnRank" type="xs:int" minOccurs="0" />
+              <xs:element name="M36ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36ReturnRank" type="xs:int" minOccurs="0" />
+              <xs:element name="M60ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60ReturnRank" type="xs:int" minOccurs="0" />
+              <xs:element name="M120ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120ReturnRank" type="xs:int" minOccurs="0" />
+              <xs:element name="M12SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36RatingValue" type="xs:int" minOccurs="0" />
+              <xs:element name="M60RatingValue" type="xs:int" minOccurs="0" />
+              <xs:element name="M120RatingValue" type="xs:int" minOccurs="0" />
+              <xs:element name="M255RatingValue" type="xs:int" minOccurs="0" />
+              <xs:element name="M36PerfRatingDesc" type="xs:int" minOccurs="0" />
+              <xs:element name="M60PerfRatingDesc" type="xs:int" minOccurs="0" />
+              <xs:element name="M120PerfRatingDesc" type="xs:int" minOccurs="0" />
+              <xs:element name="M36RiskRatingDesc" type="xs:int" minOccurs="0" />
+              <xs:element name="M60RiskRatingDesc" type="xs:int" minOccurs="0" />
+              <xs:element name="M120RiskRatingDesc" type="xs:int" minOccurs="0" />
+              <xs:element name="M12AlphaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36AlphaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60AlphaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120AlphaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12BetaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36BetaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60BetaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120BetaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12RSquaredPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36RSquaredPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60RSquaredPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120RSquaredPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FundFamily" type="xs:string" minOccurs="0" />
+              <xs:element name="MorningstarObjective" type="xs:string" minOccurs="0" />
+              <xs:element name="Strategy" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimaryIndexId" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondaryIndexId" type="xs:string" minOccurs="0" />
+              <xs:element name="M60CaptureRatioUp" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60CaptureRatioDown" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60BattingAverage" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctLargeValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctLargeBlend" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctLargeGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctMidValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctMidBlend" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctMidGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctSmallValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctSmallBlend" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PctSmallGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ManagerTenure" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AssetAllo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AssetAlloBlend" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NetAssets" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AnnualReportDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PortfolioReportDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NetAssetsReportDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CategoryId" type="xs:string" minOccurs="0" />
+              <xs:element name="Category" type="xs:string" minOccurs="0" />
+              <xs:element name="PortfolioSummaryDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SalePosition" type="xs:string" minOccurs="0" />
+              <xs:element name="EquityStyleBox" type="xs:int" minOccurs="0" />
+              <xs:element name="ProspectiveEarningsYield" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProspectiveBookValueYield" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProspectiveRevenueYield" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProspectiveCashFlowYield" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ProspectiveDividendYield" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Forecasted5YearEarningsGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ForecastedEarningsGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ForecastedBookValueGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ForecastedRevenueGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ForecastedCashFlowGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MarketCapital" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DTC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ROA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ROE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Past3YearEarningsGrowth" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EarningsYield" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CashFlowYield" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BondStyleBox" type="xs:int" minOccurs="0" />
+              <xs:element name="EffectiveDuration" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EffectiveMaturity" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AverageCoupon" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AverageCreditQuality" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AveragePrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AmtExposure" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ModifiedDuration" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PreRefundedRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Actual12b1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ManagementFee" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12InfoRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36InfoRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60InfoRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120InfoRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrimaryIndex" type="xs:string" minOccurs="0" />
+              <xs:element name="SecondaryIndex" type="xs:string" minOccurs="0" />
+              <xs:element name="IndexFundCd" type="xs:string" minOccurs="0" />
+              <xs:element name="BroadCategory" type="xs:string" default="Other" minOccurs="0" />
+              <xs:element name="StyleBox" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CategoryData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="CategoryId" type="xs:string" minOccurs="0" />
+              <xs:element name="LegalName" type="xs:string" minOccurs="0" />
+              <xs:element name="M12AlphaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36AlphaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60AlphaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120AlphaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12BetaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36BetaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60BetaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120BetaPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12RSquaredPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36RSquaredPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60RSquaredPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120RSquaredPrimary" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M0ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M0ReturnCatSize" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12ReturnCatSize" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36ReturnCatSize" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60ReturnCatSize" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120ReturnCatSize" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ExpenseRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TurnoverRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60CaptureRatioUp" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60CaptureRatioDown" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60BattingAverage" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NetExpenseRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NetAssets" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IndexData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IndexId" type="xs:string" minOccurs="0" />
+              <xs:element name="IndexName" type="xs:string" minOccurs="0" />
+              <xs:element name="M12ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M3ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M0ReturnValue" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PlanFeeProviderCompanies">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyId" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="Ein" type="xs:string" minOccurs="0" />
+              <xs:element name="AddressLine1" type="xs:string" minOccurs="0" />
+              <xs:element name="AddressLine2" type="xs:string" minOccurs="0" />
+              <xs:element name="City" type="xs:string" minOccurs="0" />
+              <xs:element name="State" type="xs:string" minOccurs="0" />
+              <xs:element name="Zip" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PlanFeeDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyId" type="xs:string" minOccurs="0" />
+              <xs:element name="FeeId" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="TypeCd" type="xs:int" minOccurs="0" />
+              <xs:element name="MethodCd" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="UnitAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NumUnits" type="xs:int" minOccurs="0" />
+              <xs:element name="StepRateTypeCd" type="xs:int" minOccurs="0" />
+              <xs:element name="StepRateMethodCd" type="xs:int" minOccurs="0" />
+              <xs:element name="PaymentCd" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PaidBy" type="xs:string" minOccurs="0" />
+              <xs:element name="PaidById" type="xs:string" minOccurs="0" />
+              <xs:element name="FeeBasis" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinFeeAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MinFeeUsed" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PlanFeeStepRates">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FeeId" type="xs:string" minOccurs="0" />
+              <xs:element name="OrderNum" type="xs:int" minOccurs="0" />
+              <xs:element name="FromValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ToValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ModelData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:string" minOccurs="0" />
+              <xs:element name="UserId" type="xs:string" minOccurs="0" />
+              <xs:element name="BenchmarkId" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Balance" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M0ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M12ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120ReturnValue" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120StandardDeviation" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M36SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M60SharpeRatio" type="xs:decimal" minOccurs="0" />
+              <xs:element name="M120SharpeRatio" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ModelFunds">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Cusip" type="xs:string" minOccurs="0" />
+              <xs:element name="Ticker" type="xs:string" minOccurs="0" />
+              <xs:element name="FundName" type="xs:string" minOccurs="0" />
+              <xs:element name="Category" type="xs:string" minOccurs="0" />
+              <xs:element name="AlloPct" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//FundData" />
+      <xs:field xpath="Cusip" />
+      <xs:field xpath="FundTypeCd" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
