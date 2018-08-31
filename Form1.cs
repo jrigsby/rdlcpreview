@@ -55,11 +55,33 @@ namespace ReportsApplication1 {
          XmlDocument xml = new XmlDocument();
          xml.Load(_reportPath);
 
+         var report = xml.DocumentElement;
+         if (report == null) {
+            MessageBox.Show(@"Report is corrupt, no root element found.");
+            return;
+         }
+
+
+
          //add namespaces so that xml may be traversed
          //http://microsoft.public.sqlserver.reportingsvcs.narkive.com/U1JHd8Nj/unable-to-parse-rdlc-with-xpath
          var ns = new XmlNamespaceManager(xml.NameTable);
-         ns.AddNamespace("ns", "http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition");
-         ns.AddNamespace("rd", "http://schemas.microsoft.com/SQLServer/reporting/reportdesigner");
+         //midway through editing a file the namespace changed, I had loaded a new version of VS so I assume thats it.
+         //point is I couldnt count on default namespace being the same, it switched to 2016/01 so now loading dynamically
+         //and switching from ns to call it default
+         //ns.AddNamespace("ns", "http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition");
+         // ns.AddNamespace("rd", "http://schemas.microsoft.com/SQLServer/reporting/reportdesigner");
+         foreach (XmlAttribute nsdef in report.Attributes) {
+            var attributeName = nsdef.Name;
+            if (attributeName.StartsWith("xmlns")) {
+               if (attributeName.Contains(":")) {
+                  ns.AddNamespace(attributeName.Split(':')[1], nsdef.InnerText);
+               }
+               else {
+                  ns.AddNamespace("default", nsdef.InnerText);
+               }
+            }
+         }
 
          reportViewer1.ProcessingMode = ProcessingMode.Local;
          reportViewer1.Reset();
@@ -71,7 +93,7 @@ namespace ReportsApplication1 {
          //We need to make that association so the user doesnt need to define them
          try {
             // ReSharper disable once PossibleNullReferenceException
-            foreach (XmlElement dataset in xml.SelectNodes("//ns:Report/ns:DataSets/ns:DataSet", ns)) {
+            foreach (XmlElement dataset in xml.SelectNodes("//default:Report/default:DataSets/default:DataSet", ns)) {
                var name = dataset.GetAttribute("Name");
                var table = dataset.SelectSingleNode("rd:DataSetInfo/rd:TableName", ns)?.InnerText;
                reportViewer1.LocalReport.DataSources.Add(new ReportDataSource(name, ds.Tables[table]));
