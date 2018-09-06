@@ -9,149 +9,15 @@
       </ConnectionProperties>
       <rd:DataSourceID>cf97d62a-ee67-4247-8a80-06c87011f9e1</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="FundFactSheet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>64b25968-8e7a-467f-a9e7-881795163ec1</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="PlanDetail">
-      <Query>
-        <DataSourceName>NewDataSet</DataSourceName>
-        <CommandText>/* Local Query */</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PlanName">
-          <DataField>PlanName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PrimaryContact">
-          <DataField>PrimaryContact</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="EIN">
-          <DataField>EIN</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="AddressLine1">
-          <DataField>AddressLine1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="AddressLine2">
-          <DataField>AddressLine2</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="City">
-          <DataField>City</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="State">
-          <DataField>State</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Zip">
-          <DataField>Zip</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Phone">
-          <DataField>Phone</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="AsOfDate">
-          <DataField>AsOfDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="BalanceAsOfDate">
-          <DataField>BalanceAsOfDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="ParticipantCount">
-          <DataField>ParticipantCount</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Balance">
-          <DataField>Balance</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Notes">
-          <DataField>Notes</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CustodyFee">
-          <DataField>CustodyFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="RecordkeepingFee">
-          <DataField>RecordkeepingFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="TPAFee">
-          <DataField>TPAFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="AdvisoryFee">
-          <DataField>AdvisoryFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="TrusteeFee">
-          <DataField>TrusteeFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="OtherFee">
-          <DataField>OtherFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="MinimumFee">
-          <DataField>MinimumFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="RevShareFee">
-          <DataField>RevShareFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="SubTAFee">
-          <DataField>SubTAFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="TwelveB1Fee">
-          <DataField>TwelveB1Fee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Has12B1Fees">
-          <DataField>Has12B1Fees</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="HasRevShrFees">
-          <DataField>HasRevShrFees</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="HasSubTABpsFees">
-          <DataField>HasSubTABpsFees</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="TradingPlatform">
-          <DataField>TradingPlatform</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RevShareAdjustmentFee">
-          <DataField>RevShareAdjustmentFee</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="MinFeeUsed">
-          <DataField>MinFeeUsed</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="LoanBalance">
-          <DataField>LoanBalance</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>NewDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\Report Project1\ReportsApplication1\DataSet1.xsd</rd:SchemaPath>
-        <rd:TableName>PlanDetail</rd:TableName>
-      </rd:DataSetInfo>
-    </DataSet>
     <DataSet Name="FundData">
       <Query>
         <DataSourceName>NewDataSet</DataSourceName>
@@ -161,10 +27,6 @@
         <Field Name="Cusip">
           <DataField>Cusip</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="AsOfDate">
-          <DataField>AsOfDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="NetExpenseRatio">
           <DataField>NetExpenseRatio</DataField>
@@ -181,6 +43,10 @@
         <Field Name="DataFeedId">
           <DataField>DataFeedId</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AsOfDate">
+          <DataField>AsOfDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="LegalName">
           <DataField>LegalName</DataField>
@@ -201,6 +67,10 @@
         <Field Name="NumberOfHolding">
           <DataField>NumberOfHolding</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="LegalTypeCd">
+          <DataField>LegalTypeCd</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="M3ReturnValue">
           <DataField>M3ReturnValue</DataField>
@@ -386,6 +256,14 @@
           <DataField>SecondaryIndexId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="M36CaptureRatioUp">
+          <DataField>M36CaptureRatioUp</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M36CaptureRatioDown">
+          <DataField>M36CaptureRatioDown</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="M60CaptureRatioUp">
           <DataField>M60CaptureRatioUp</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -470,9 +348,21 @@
           <DataField>Category</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SubCategoryId">
+          <DataField>SubCategoryId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SubCategory">
+          <DataField>SubCategory</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="PortfolioSummaryDate">
           <DataField>PortfolioSummaryDate</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Balance">
+          <DataField>Balance</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="SalePosition">
           <DataField>SalePosition</DataField>
@@ -618,10 +508,6 @@
           <DataField>SecondaryIndex</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="IndexFundCd">
-          <DataField>IndexFundCd</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="BroadCategory">
           <DataField>BroadCategory</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -630,10 +516,114 @@
           <DataField>StyleBox</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="IsIndexFund">
+          <DataField>IsIndexFund</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="M36TrackingError">
+          <DataField>M36TrackingError</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M60TrackingError">
+          <DataField>M60TrackingError</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M120TrackingError">
+          <DataField>M120TrackingError</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M36RiskAdjustedReturn">
+          <DataField>M36RiskAdjustedReturn</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M60RiskAdjustedReturn">
+          <DataField>M60RiskAdjustedReturn</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M120RiskAdjustedReturn">
+          <DataField>M120RiskAdjustedReturn</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SinceInceptionReturn">
+          <DataField>SinceInceptionReturn</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ProspectusIndexId">
+          <DataField>ProspectusIndexId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="M36AlphaRank">
+          <DataField>M36AlphaRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M60AlphaRank">
+          <DataField>M60AlphaRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M120AlphaRank">
+          <DataField>M120AlphaRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M36BetaRank">
+          <DataField>M36BetaRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M60BetaRank">
+          <DataField>M60BetaRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M120BetaRank">
+          <DataField>M120BetaRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M36RSquaredRank">
+          <DataField>M36RSquaredRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M60RSquaredRank">
+          <DataField>M60RSquaredRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M120RSquaredRank">
+          <DataField>M120RSquaredRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M36SharpeRank">
+          <DataField>M36SharpeRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M60SharpeRank">
+          <DataField>M60SharpeRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M120SharpeRank">
+          <DataField>M120SharpeRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M36StandardDeviationRank">
+          <DataField>M36StandardDeviationRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M60StandardDeviationRank">
+          <DataField>M60StandardDeviationRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="M120StandardDeviationRank">
+          <DataField>M120StandardDeviationRank</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CompanyId">
+          <DataField>CompanyId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ProspectusIndex">
+          <DataField>ProspectusIndex</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>NewDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\Report Project1\ReportsApplication1\DataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>FundFactSheet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\FundFactSheet.xsd</rd:SchemaPath>
         <rd:TableName>FundData</rd:TableName>
       </rd:DataSetInfo>
     </DataSet>
@@ -643,10 +633,6 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Id">
-          <DataField>Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="CategoryId">
           <DataField>CategoryId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -709,7 +695,7 @@
         </Field>
         <Field Name="M0ReturnCatSize">
           <DataField>M0ReturnCatSize</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="M12ReturnValue">
           <DataField>M12ReturnValue</DataField>
@@ -717,7 +703,7 @@
         </Field>
         <Field Name="M12ReturnCatSize">
           <DataField>M12ReturnCatSize</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="M36ReturnValue">
           <DataField>M36ReturnValue</DataField>
@@ -725,7 +711,7 @@
         </Field>
         <Field Name="M36ReturnCatSize">
           <DataField>M36ReturnCatSize</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="M60ReturnValue">
           <DataField>M60ReturnValue</DataField>
@@ -733,7 +719,7 @@
         </Field>
         <Field Name="M60ReturnCatSize">
           <DataField>M60ReturnCatSize</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="M120ReturnValue">
           <DataField>M120ReturnValue</DataField>
@@ -741,7 +727,7 @@
         </Field>
         <Field Name="M120ReturnCatSize">
           <DataField>M120ReturnCatSize</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="ExpenseRatio">
           <DataField>ExpenseRatio</DataField>
@@ -775,6 +761,14 @@
           <DataField>TurnoverRatio</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="M36CaptureRatioUp">
+          <DataField>M36CaptureRatioUp</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M36CaptureRatioDown">
+          <DataField>M36CaptureRatioDown</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="M60CaptureRatioUp">
           <DataField>M60CaptureRatioUp</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -795,10 +789,50 @@
           <DataField>NetAssets</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="M36TrackingError">
+          <DataField>M36TrackingError</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M60TrackingError">
+          <DataField>M60TrackingError</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M120TrackingError">
+          <DataField>M120TrackingError</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M36RiskAdjustedReturn">
+          <DataField>M36RiskAdjustedReturn</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M60RiskAdjustedReturn">
+          <DataField>M60RiskAdjustedReturn</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M120RiskAdjustedReturn">
+          <DataField>M120RiskAdjustedReturn</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M3ReturnValue">
+          <DataField>M3ReturnValue</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="M3ReturnCatSize">
+          <DataField>M3ReturnCatSize</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Actual12b1">
+          <DataField>Actual12b1</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ManagerTenure">
+          <DataField>ManagerTenure</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>NewDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\DataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>FundFactSheet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\FundFactSheet.xsd</rd:SchemaPath>
         <rd:TableName>CategoryData</rd:TableName>
       </rd:DataSetInfo>
     </DataSet>
@@ -874,12 +908,46 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>NewDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\DataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>FundFactSheet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\FundFactSheet.xsd</rd:SchemaPath>
         <rd:TableName>IndexData</rd:TableName>
-        <rd:TableAdapterFillMethod />
-        <rd:TableAdapterGetDataMethod />
-        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="PortfolioBreakdown">
+      <Query>
+        <DataSourceName>FundFactSheet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Cusip">
+          <DataField>Cusip</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SalePosition">
+          <DataField>SalePosition</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TypeCd">
+          <DataField>TypeCd</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Type">
+          <DataField>Type</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Value">
+          <DataField>Value</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CountryId">
+          <DataField>CountryId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>FundFactSheet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\FundFactSheet.xsd</rd:SchemaPath>
+        <rd:TableName>PortfolioBreakdown</rd:TableName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -891,19 +959,18 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>7.4375in</Width>
+                  <Width>7.88159in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>7.48959in</Height>
+                  <Height>8.39458in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Rectangle Name="Rectangle1">
                           <ReportItems>
                             <Textbox Name="LegalName">
-                              <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
@@ -917,8 +984,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>LegalName</rd:DefaultName>
-                              <Top>0.83334in</Top>
-                              <Left>0.1875in</Left>
+                              <Top>0.86111in</Top>
+                              <Left>0.05814in</Left>
                               <Height>0.25in</Height>
                               <Width>1.8125in</Width>
                               <Style>
@@ -932,7 +999,6 @@
                               </Style>
                             </Textbox>
                             <Textbox Name="M255RatingValue">
-                              <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
@@ -949,8 +1015,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>M255RatingValue</rd:DefaultName>
-                              <Top>0.83334in</Top>
-                              <Left>2.09375in</Left>
+                              <Top>0.84723in</Top>
+                              <Left>1.98958in</Left>
                               <Height>0.25in</Height>
                               <Width>1in</Width>
                               <ZIndex>1</ZIndex>
@@ -961,8 +1027,6 @@
                                 <VerticalAlign>Top</VerticalAlign>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
                             <Textbox Name="Textbox2">
@@ -983,7 +1047,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox2</rd:DefaultName>
                               <Top>0.54167in</Top>
-                              <Left>0.185in</Left>
+                              <Left>0.05814in</Left>
                               <Height>0.25in</Height>
                               <Width>1.81499in</Width>
                               <ZIndex>2</ZIndex>
@@ -1015,7 +1079,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox3</rd:DefaultName>
                               <Top>0.54167in</Top>
-                              <Left>2.09375in</Left>
+                              <Left>1.98958in</Left>
                               <Height>0.25in</Height>
                               <Width>1.97222in</Width>
                               <ZIndex>3</ZIndex>
@@ -1047,7 +1111,7 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox4</rd:DefaultName>
                               <Top>0.54167in</Top>
-                              <Left>4.13541in</Left>
+                              <Left>4.01736in</Left>
                               <Height>0.25in</Height>
                               <Width>1.13542in</Width>
                               <ZIndex>4</ZIndex>
@@ -1076,9 +1140,9 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox5</rd:DefaultName>
                               <Top>0.54167in</Top>
-                              <Left>5.32639in</Left>
-                              <Height>0.25in</Height>
-                              <Width>2.00694in</Width>
+                              <Left>5.22223in</Left>
+                              <Height>0.2in</Height>
+                              <Width>2.63194in</Width>
                               <ZIndex>5</ZIndex>
                               <Style>
                                 <Border>
@@ -1105,9 +1169,9 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox6</rd:DefaultName>
                               <Top>0.84723in</Top>
-                              <Left>5.3125in</Left>
-                              <Height>0.25in</Height>
-                              <Width>2.02083in</Width>
+                              <Left>5.237in</Left>
+                              <Height>0.2in</Height>
+                              <Width>2.63194in</Width>
                               <ZIndex>6</ZIndex>
                               <Style>
                                 <Border>
@@ -1137,8 +1201,8 @@
                               </Paragraphs>
                               <rd:DefaultName>Textbox7</rd:DefaultName>
                               <Top>0.84723in</Top>
-                              <Left>4.13541in</Left>
-                              <Height>0.25in</Height>
+                              <Left>4.01736in</Left>
+                              <Height>0.23611in</Height>
                               <Width>1.13542in</Width>
                               <ZIndex>7</ZIndex>
                               <Style>
@@ -1166,9 +1230,9 @@
                               </Paragraphs>
                               <rd:DefaultName>Strategy</rd:DefaultName>
                               <Top>1.30209in</Top>
-                              <Left>0.1875in</Left>
-                              <Height>0.80208in</Height>
-                              <Width>7.14584in</Width>
+                              <Left>0.05814in</Left>
+                              <Height>0.96875in</Height>
+                              <Width>7.79603in</Width>
                               <ZIndex>8</ZIndex>
                               <Style>
                                 <Border>
@@ -1181,13 +1245,15 @@
                               </Style>
                             </Textbox>
                             <Line Name="Line1">
-                              <Top>0.40973in</Top>
+                              <Top>0.43056in</Top>
                               <Height>0in</Height>
-                              <Width>7.4375in</Width>
+                              <Width>7.86894in</Width>
                               <ZIndex>9</ZIndex>
                               <Style>
                                 <Border>
+                                  <Color>LimeGreen</Color>
                                   <Style>Solid</Style>
+                                  <Width>2pt</Width>
                                 </Border>
                               </Style>
                             </Line>
@@ -1206,6 +1272,7 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>LegalName1</rd:DefaultName>
+                              <Top>0.02083in</Top>
                               <Height>0.25in</Height>
                               <Width>4.61458in</Width>
                               <ZIndex>10</ZIndex>
@@ -1238,7 +1305,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Ticker</rd:DefaultName>
-                              <Left>6.4375in</Left>
+                              <Top>0.02083in</Top>
+                              <Left>6.85417in</Left>
                               <Height>0.25in</Height>
                               <Width>1in</Width>
                               <ZIndex>11</ZIndex>
@@ -1269,10 +1337,10 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox13</rd:DefaultName>
-                              <Top>2.21875in</Top>
-                              <Left>0.1875in</Left>
+                              <Top>2.34028in</Top>
+                              <Left>0.05814in</Left>
                               <Height>0.25in</Height>
-                              <Width>7.14584in</Width>
+                              <Width>7.79603in</Width>
                               <ZIndex>12</ZIndex>
                               <Style>
                                 <Border>
@@ -1301,15 +1369,16 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox13</rd:DefaultName>
-                              <Top>5.57639in</Top>
-                              <Left>0.1875in</Left>
+                              <Top>5.125in</Top>
+                              <Left>0.05814in</Left>
                               <Height>0.25in</Height>
-                              <Width>7.14584in</Width>
+                              <Width>7.79603in</Width>
                               <ZIndex>13</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
+                                <BackgroundColor>Lime</BackgroundColor>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -1333,10 +1402,10 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox13</rd:DefaultName>
-                              <Top>5.89584in</Top>
-                              <Left>0.18625in</Left>
+                              <Top>7.3507in</Top>
+                              <Left>0.05814in</Left>
                               <Height>0.25in</Height>
-                              <Width>7.14584in</Width>
+                              <Width>7.79603in</Width>
                               <ZIndex>14</ZIndex>
                               <Style>
                                 <Border>
@@ -1365,8 +1434,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox29</rd:DefaultName>
-                              <Top>6.21528in</Top>
-                              <Left>0.18625in</Left>
+                              <Top>7.67014in</Top>
+                              <Left>0.08431in</Left>
                               <Height>0.25in</Height>
                               <Width>1in</Width>
                               <ZIndex>15</ZIndex>
@@ -1395,8 +1464,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>FundFamily</rd:DefaultName>
-                              <Top>6.21528in</Top>
-                              <Left>1.25569in</Left>
+                              <Top>7.67014in</Top>
+                              <Left>1.15376in</Left>
                               <Height>0.25in</Height>
                               <Width>2.47917in</Width>
                               <ZIndex>16</ZIndex>
@@ -1427,8 +1496,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>NetExpenseRatio</rd:DefaultName>
-                              <Top>6.64063in</Top>
-                              <Left>2.52875in</Left>
+                              <Top>7.98958in</Top>
+                              <Left>2.44071in</Left>
                               <Height>0.25in</Height>
                               <Width>1in</Width>
                               <ZIndex>17</ZIndex>
@@ -1459,8 +1528,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox33</rd:DefaultName>
-                              <Top>6.64063in</Top>
-                              <Left>0.185in</Left>
+                              <Top>7.98958in</Top>
+                              <Left>0.09696in</Left>
                               <Height>0.25in</Height>
                               <Width>2.27431in</Width>
                               <ZIndex>18</ZIndex>
@@ -1491,8 +1560,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox34</rd:DefaultName>
-                              <Top>7.05209in</Top>
-                              <Left>0.1875in</Left>
+                              <Top>7.67014in</Top>
+                              <Left>5.12799in</Left>
                               <Height>0.25in</Height>
                               <Width>1.11334in</Width>
                               <ZIndex>19</ZIndex>
@@ -1525,8 +1594,8 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>InceptionDate</rd:DefaultName>
-                              <Top>7.05209in</Top>
-                              <Left>1.37028in</Left>
+                              <Top>7.67014in</Top>
+                              <Left>6.31077in</Left>
                               <Height>0.25in</Height>
                               <Width>1.33333in</Width>
                               <ZIndex>20</ZIndex>
@@ -1554,7 +1623,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value />
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -1586,21 +1657,21 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>0.77955in</Width>
+                                    <Width>0.81497in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.77955in</Width>
+                                    <Width>0.81497in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.77955in</Width>
+                                    <Width>0.81497in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.77955in</Width>
+                                    <Width>0.81497in</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.25in</Height>
+                                    <Height>0.28472in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1612,7 +1683,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M12ReturnValue.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1644,7 +1717,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M36ReturnValue.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1676,7 +1751,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M60ReturnValue.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1708,7 +1785,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M120ReturnValue.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1748,7 +1827,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Lookup(Fields!CategoryId.Value, Fields!CategoryId.Value, Fields!M12ReturnValue.Value, "CategoryData")</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1780,7 +1861,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Lookup(Fields!CategoryId.Value, Fields!CategoryId.Value, Fields!M36ReturnValue.Value, "CategoryData")</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1812,7 +1895,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Lookup(Fields!CategoryId.Value, Fields!CategoryId.Value, Fields!M60ReturnValue.Value, "CategoryData")</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1844,7 +1929,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Lookup(Fields!CategoryId.Value, Fields!CategoryId.Value, Fields!M120ReturnValue.Value, "CategoryData")</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1884,7 +1971,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>-</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -1918,7 +2007,6 @@
                                                     <Value>=Code.FormatAsStars(Sum(Fields!M36RatingValue.Value))</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI Symbol</FontFamily>
-                                                      <FontSize>12pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1954,7 +2042,6 @@
                                                     <Value>=Code.FormatAsStars(Sum(Fields!M60RatingValue.Value))</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI Symbol</FontFamily>
-                                                      <FontSize>12pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1989,7 +2076,6 @@
                                                     <Value>=Code.FormatAsStars(Sum(Fields!M120RatingValue.Value))</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI Symbol</FontFamily>
-                                                      <FontSize>12pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2030,7 +2116,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>-</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2062,7 +2150,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Code.ConvertRiskRating(Sum(Fields!M36RiskRatingDesc.Value))</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2094,7 +2184,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Code.ConvertRiskRating(Sum(Fields!M60RiskRatingDesc.Value))</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2126,7 +2218,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Code.ConvertRiskRating(Sum(Fields!M120RiskRatingDesc.Value))</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2166,7 +2260,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>-</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2198,7 +2294,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Code.ConvertRiskRating(Sum(Fields!M36PerfRatingDesc.Value))</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2230,7 +2328,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Code.ConvertRiskRating(Sum(Fields!M60PerfRatingDesc.Value))</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2262,7 +2362,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Code.ConvertRiskRating(Sum(Fields!M120PerfRatingDesc.Value))</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2302,7 +2404,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M12StandardDeviation.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2334,7 +2438,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M36StandardDeviation.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2366,7 +2472,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M36StandardDeviation.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2398,7 +2506,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M120StandardDeviation.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2438,7 +2548,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M12SharpeRatio.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2470,7 +2582,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M36SharpeRatio.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2502,7 +2616,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M60SharpeRatio.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2534,7 +2650,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M120SharpeRatio.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2574,7 +2692,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M12ReturnRank.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2606,7 +2726,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M36ReturnRank.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2638,7 +2760,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M60ReturnRank.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2670,7 +2794,9 @@
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Fields!M120ReturnRank.Value</Value>
-                                                    <Style />
+                                                    <Style>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
@@ -2718,7 +2844,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>1 Year</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style>
@@ -2756,7 +2884,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>3 Year</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style>
@@ -2794,7 +2924,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>5 Year</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style>
@@ -2832,7 +2964,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>10 Year</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style>
@@ -2872,7 +3006,7 @@
                                       </GroupExpressions>
                                     </Group>
                                     <TablixHeader>
-                                      <Size>0.90858in</Size>
+                                      <Size>0.944in</Size>
                                       <CellContents>
                                         <Textbox Name="Textbox39">
                                           <CanGrow>true</CanGrow>
@@ -2882,7 +3016,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>Total Return</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -2908,7 +3044,7 @@
                                   </TablixMember>
                                   <TablixMember>
                                     <TablixHeader>
-                                      <Size>0.90858in</Size>
+                                      <Size>0.944in</Size>
                                       <CellContents>
                                         <Textbox Name="Textbox45">
                                           <CanGrow>true</CanGrow>
@@ -2918,7 +3054,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>Total</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -2945,7 +3083,7 @@
                                   </TablixMember>
                                   <TablixMember>
                                     <TablixHeader>
-                                      <Size>0.90858in</Size>
+                                      <Size>0.944in</Size>
                                       <CellContents>
                                         <Textbox Name="Textbox47">
                                           <CanGrow>true</CanGrow>
@@ -2955,7 +3093,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>MStar Rating</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -2982,7 +3122,7 @@
                                   </TablixMember>
                                   <TablixMember>
                                     <TablixHeader>
-                                      <Size>0.90858in</Size>
+                                      <Size>0.944in</Size>
                                       <CellContents>
                                         <Textbox Name="Textbox49">
                                           <CanGrow>true</CanGrow>
@@ -2992,7 +3132,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>MStar Risk</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -3019,7 +3161,7 @@
                                   </TablixMember>
                                   <TablixMember>
                                     <TablixHeader>
-                                      <Size>0.90858in</Size>
+                                      <Size>0.944in</Size>
                                       <CellContents>
                                         <Textbox Name="Textbox57">
                                           <CanGrow>true</CanGrow>
@@ -3029,7 +3171,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>MStar Return</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -3056,7 +3200,7 @@
                                   </TablixMember>
                                   <TablixMember>
                                     <TablixHeader>
-                                      <Size>0.90858in</Size>
+                                      <Size>0.944in</Size>
                                       <CellContents>
                                         <Textbox Name="Textbox55">
                                           <CanGrow>true</CanGrow>
@@ -3066,7 +3210,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>Std Deviation</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -3093,7 +3239,7 @@
                                   </TablixMember>
                                   <TablixMember>
                                     <TablixHeader>
-                                      <Size>0.90858in</Size>
+                                      <Size>0.944in</Size>
                                       <CellContents>
                                         <Textbox Name="Textbox53">
                                           <CanGrow>true</CanGrow>
@@ -3103,7 +3249,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>Sharpe Ratio</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -3130,7 +3278,7 @@
                                   </TablixMember>
                                   <TablixMember>
                                     <TablixHeader>
-                                      <Size>0.90858in</Size>
+                                      <Size>0.944in</Size>
                                       <CellContents>
                                         <Textbox Name="Textbox51">
                                           <CanGrow>true</CanGrow>
@@ -3140,7 +3288,9 @@
                                               <TextRuns>
                                                 <TextRun>
                                                   <Value>% Rank Cat</Value>
-                                                  <Style />
+                                                  <Style>
+                                                    <FontSize>8pt</FontSize>
+                                                  </Style>
                                                 </TextRun>
                                               </TextRuns>
                                               <Style />
@@ -3168,10 +3318,10 @@
                                 </TablixMembers>
                               </TablixRowHierarchy>
                               <DataSetName>FundData</DataSetName>
-                              <Top>2.61459in</Top>
+                              <Top>2.70834in</Top>
                               <Left>0.185in</Left>
-                              <Height>2.25in</Height>
-                              <Width>4.0268in</Width>
+                              <Height>2.28472in</Height>
+                              <Width>4.20388in</Width>
                               <ZIndex>21</ZIndex>
                               <Style>
                                 <Border>
@@ -3179,10 +3329,838 @@
                                 </Border>
                               </Style>
                             </Tablix>
+                            <Rectangle Name="Rectangle8">
+                              <ReportItems>
+                                <Chart Name="Chart3">
+                                  <ChartCategoryHierarchy>
+                                    <ChartMembers>
+                                      <ChartMember>
+                                        <Label />
+                                      </ChartMember>
+                                    </ChartMembers>
+                                  </ChartCategoryHierarchy>
+                                  <ChartSeriesHierarchy>
+                                    <ChartMembers>
+                                      <ChartMember>
+                                        <Group Name="Chart3_SeriesGroup">
+                                          <GroupExpressions>
+                                            <GroupExpression>=Fields!M12ReturnValue.Value</GroupExpression>
+                                          </GroupExpressions>
+                                        </Group>
+                                        <SortExpressions>
+                                          <SortExpression>
+                                            <Value>=Fields!M12ReturnValue.Value</Value>
+                                          </SortExpression>
+                                        </SortExpressions>
+                                        <ChartMembers>
+                                          <ChartMember>
+                                            <Label>M12Return Value</Label>
+                                          </ChartMember>
+                                          <ChartMember>
+                                            <Label>M12Return Value</Label>
+                                          </ChartMember>
+                                          <ChartMember>
+                                            <Label>M36Return Value</Label>
+                                          </ChartMember>
+                                          <ChartMember>
+                                            <Label>M36Return Value</Label>
+                                          </ChartMember>
+                                          <ChartMember>
+                                            <Label>M60Return Value</Label>
+                                          </ChartMember>
+                                          <ChartMember>
+                                            <Label>M60Return Value</Label>
+                                          </ChartMember>
+                                          <ChartMember>
+                                            <Label>M120Return Value</Label>
+                                          </ChartMember>
+                                          <ChartMember>
+                                            <Label>M120Return Value</Label>
+                                          </ChartMember>
+                                        </ChartMembers>
+                                        <Label>=Fields!M12ReturnValue.Value</Label>
+                                      </ChartMember>
+                                    </ChartMembers>
+                                  </ChartSeriesHierarchy>
+                                  <ChartData>
+                                    <ChartSeriesCollection>
+                                      <ChartSeries Name="M12ReturnValue">
+                                        <ChartDataPoints>
+                                          <ChartDataPoint>
+                                            <ChartDataPointValues>
+                                              <X>="1 Yr"</X>
+                                              <Y>=Sum(Fields!M12ReturnValue.Value)</Y>
+                                            </ChartDataPointValues>
+                                            <ChartDataLabel>
+                                              <Style />
+                                              <UseValueAsLabel>true</UseValueAsLabel>
+                                            </ChartDataLabel>
+                                            <Style>
+                                              <Color>LightBlue</Color>
+                                            </Style>
+                                            <ChartMarker>
+                                              <Style />
+                                            </ChartMarker>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                          </ChartDataPoint>
+                                        </ChartDataPoints>
+                                        <Style />
+                                        <ChartEmptyPoints>
+                                          <Style />
+                                          <ChartMarker>
+                                            <Style />
+                                          </ChartMarker>
+                                          <ChartDataLabel>
+                                            <Style />
+                                          </ChartDataLabel>
+                                        </ChartEmptyPoints>
+                                        <CustomProperties>
+                                          <CustomProperty>
+                                            <Name>PointWidth</Name>
+                                            <Value>2</Value>
+                                          </CustomProperty>
+                                        </CustomProperties>
+                                        <ValueAxisName>Primary</ValueAxisName>
+                                        <CategoryAxisName>Primary</CategoryAxisName>
+                                        <ChartSmartLabel>
+                                          <CalloutLineColor>Black</CalloutLineColor>
+                                          <MinMovingDistance>0pt</MinMovingDistance>
+                                        </ChartSmartLabel>
+                                      </ChartSeries>
+                                      <ChartSeries Name="M12ReturnValue1">
+                                        <ChartDataPoints>
+                                          <ChartDataPoint>
+                                            <ChartDataPointValues>
+                                              <Y>=Sum(Lookup(Fields!CategoryId.Value, Fields!CategoryId.Value, Fields!M12ReturnValue.Value, "CategoryData"))</Y>
+                                            </ChartDataPointValues>
+                                            <ChartDataLabel>
+                                              <Style />
+                                            </ChartDataLabel>
+                                            <Style>
+                                              <Color>CornflowerBlue</Color>
+                                            </Style>
+                                            <ChartMarker>
+                                              <Style />
+                                            </ChartMarker>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                          </ChartDataPoint>
+                                        </ChartDataPoints>
+                                        <Style />
+                                        <ChartEmptyPoints>
+                                          <Style />
+                                          <ChartMarker>
+                                            <Style />
+                                          </ChartMarker>
+                                          <ChartDataLabel>
+                                            <Style />
+                                          </ChartDataLabel>
+                                        </ChartEmptyPoints>
+                                        <CustomProperties>
+                                          <CustomProperty>
+                                            <Name>PointWidth</Name>
+                                            <Value>2</Value>
+                                          </CustomProperty>
+                                        </CustomProperties>
+                                        <ValueAxisName>Primary</ValueAxisName>
+                                        <CategoryAxisName>Primary</CategoryAxisName>
+                                        <ChartSmartLabel>
+                                          <CalloutLineColor>Black</CalloutLineColor>
+                                          <MinMovingDistance>0pt</MinMovingDistance>
+                                        </ChartSmartLabel>
+                                      </ChartSeries>
+                                      <ChartSeries Name="M36ReturnValue">
+                                        <ChartDataPoints>
+                                          <ChartDataPoint>
+                                            <ChartDataPointValues>
+                                              <Y>=Sum(Fields!M36ReturnValue.Value)</Y>
+                                            </ChartDataPointValues>
+                                            <ChartDataLabel>
+                                              <Style />
+                                            </ChartDataLabel>
+                                            <Style>
+                                              <Color>LightBlue</Color>
+                                            </Style>
+                                            <ChartMarker>
+                                              <Style />
+                                            </ChartMarker>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                          </ChartDataPoint>
+                                        </ChartDataPoints>
+                                        <Style />
+                                        <ChartEmptyPoints>
+                                          <Style />
+                                          <ChartMarker>
+                                            <Style />
+                                          </ChartMarker>
+                                          <ChartDataLabel>
+                                            <Style />
+                                          </ChartDataLabel>
+                                        </ChartEmptyPoints>
+                                        <CustomProperties>
+                                          <CustomProperty>
+                                            <Name>PointWidth</Name>
+                                            <Value>2</Value>
+                                          </CustomProperty>
+                                        </CustomProperties>
+                                        <ValueAxisName>Primary</ValueAxisName>
+                                        <CategoryAxisName>Primary</CategoryAxisName>
+                                        <ChartSmartLabel>
+                                          <CalloutLineColor>Black</CalloutLineColor>
+                                          <MinMovingDistance>0pt</MinMovingDistance>
+                                        </ChartSmartLabel>
+                                      </ChartSeries>
+                                      <ChartSeries Name="M36ReturnValue1">
+                                        <ChartDataPoints>
+                                          <ChartDataPoint>
+                                            <ChartDataPointValues>
+                                              <Y>=Sum(Lookup(Fields!CategoryId.Value, Fields!CategoryId.Value, Fields!M36ReturnValue.Value, "CategoryData"))</Y>
+                                            </ChartDataPointValues>
+                                            <ChartDataLabel>
+                                              <Style />
+                                            </ChartDataLabel>
+                                            <Style>
+                                              <Color>CornflowerBlue</Color>
+                                            </Style>
+                                            <ChartMarker>
+                                              <Style />
+                                            </ChartMarker>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                          </ChartDataPoint>
+                                        </ChartDataPoints>
+                                        <Style />
+                                        <ChartEmptyPoints>
+                                          <Style />
+                                          <ChartMarker>
+                                            <Style />
+                                          </ChartMarker>
+                                          <ChartDataLabel>
+                                            <Style />
+                                          </ChartDataLabel>
+                                        </ChartEmptyPoints>
+                                        <CustomProperties>
+                                          <CustomProperty>
+                                            <Name>PointWidth</Name>
+                                            <Value>2</Value>
+                                          </CustomProperty>
+                                        </CustomProperties>
+                                        <ValueAxisName>Primary</ValueAxisName>
+                                        <CategoryAxisName>Primary</CategoryAxisName>
+                                        <ChartSmartLabel>
+                                          <CalloutLineColor>Black</CalloutLineColor>
+                                          <MinMovingDistance>0pt</MinMovingDistance>
+                                        </ChartSmartLabel>
+                                      </ChartSeries>
+                                      <ChartSeries Name="M60ReturnValue">
+                                        <ChartDataPoints>
+                                          <ChartDataPoint>
+                                            <ChartDataPointValues>
+                                              <Y>=Sum(Fields!M60ReturnValue.Value)</Y>
+                                            </ChartDataPointValues>
+                                            <ChartDataLabel>
+                                              <Style />
+                                            </ChartDataLabel>
+                                            <Style>
+                                              <Color>LightBlue</Color>
+                                            </Style>
+                                            <ChartMarker>
+                                              <Style />
+                                            </ChartMarker>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                          </ChartDataPoint>
+                                        </ChartDataPoints>
+                                        <Style />
+                                        <ChartEmptyPoints>
+                                          <Style />
+                                          <ChartMarker>
+                                            <Style />
+                                          </ChartMarker>
+                                          <ChartDataLabel>
+                                            <Style />
+                                          </ChartDataLabel>
+                                        </ChartEmptyPoints>
+                                        <CustomProperties>
+                                          <CustomProperty>
+                                            <Name>PointWidth</Name>
+                                            <Value>2</Value>
+                                          </CustomProperty>
+                                        </CustomProperties>
+                                        <ValueAxisName>Primary</ValueAxisName>
+                                        <CategoryAxisName>Primary</CategoryAxisName>
+                                        <ChartSmartLabel>
+                                          <CalloutLineColor>Black</CalloutLineColor>
+                                          <MinMovingDistance>0pt</MinMovingDistance>
+                                        </ChartSmartLabel>
+                                      </ChartSeries>
+                                      <ChartSeries Name="M60ReturnValue1">
+                                        <ChartDataPoints>
+                                          <ChartDataPoint>
+                                            <ChartDataPointValues>
+                                              <Y>=Sum(Lookup(Fields!CategoryId.Value, Fields!CategoryId.Value, Fields!M60ReturnValue.Value, "CategoryData"))</Y>
+                                            </ChartDataPointValues>
+                                            <ChartDataLabel>
+                                              <Style />
+                                            </ChartDataLabel>
+                                            <Style>
+                                              <Color>CornflowerBlue</Color>
+                                            </Style>
+                                            <ChartMarker>
+                                              <Style />
+                                            </ChartMarker>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                          </ChartDataPoint>
+                                        </ChartDataPoints>
+                                        <Style />
+                                        <ChartEmptyPoints>
+                                          <Style />
+                                          <ChartMarker>
+                                            <Style />
+                                          </ChartMarker>
+                                          <ChartDataLabel>
+                                            <Style />
+                                          </ChartDataLabel>
+                                        </ChartEmptyPoints>
+                                        <CustomProperties>
+                                          <CustomProperty>
+                                            <Name>PointWidth</Name>
+                                            <Value>2</Value>
+                                          </CustomProperty>
+                                        </CustomProperties>
+                                        <ValueAxisName>Primary</ValueAxisName>
+                                        <CategoryAxisName>Primary</CategoryAxisName>
+                                        <ChartSmartLabel>
+                                          <CalloutLineColor>Black</CalloutLineColor>
+                                          <MinMovingDistance>0pt</MinMovingDistance>
+                                        </ChartSmartLabel>
+                                      </ChartSeries>
+                                      <ChartSeries Name="M120ReturnValue">
+                                        <ChartDataPoints>
+                                          <ChartDataPoint>
+                                            <ChartDataPointValues>
+                                              <Y>=Sum(Fields!M120ReturnValue.Value)</Y>
+                                            </ChartDataPointValues>
+                                            <ChartDataLabel>
+                                              <Style />
+                                            </ChartDataLabel>
+                                            <Style>
+                                              <Color>LightBlue</Color>
+                                            </Style>
+                                            <ChartMarker>
+                                              <Style />
+                                            </ChartMarker>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                          </ChartDataPoint>
+                                        </ChartDataPoints>
+                                        <Style />
+                                        <ChartEmptyPoints>
+                                          <Style />
+                                          <ChartMarker>
+                                            <Style />
+                                          </ChartMarker>
+                                          <ChartDataLabel>
+                                            <Style />
+                                          </ChartDataLabel>
+                                        </ChartEmptyPoints>
+                                        <CustomProperties>
+                                          <CustomProperty>
+                                            <Name>PointWidth</Name>
+                                            <Value>2</Value>
+                                          </CustomProperty>
+                                        </CustomProperties>
+                                        <ValueAxisName>Primary</ValueAxisName>
+                                        <CategoryAxisName>Primary</CategoryAxisName>
+                                        <ChartSmartLabel>
+                                          <CalloutLineColor>Black</CalloutLineColor>
+                                          <MinMovingDistance>0pt</MinMovingDistance>
+                                        </ChartSmartLabel>
+                                      </ChartSeries>
+                                      <ChartSeries Name="M120ReturnValue1">
+                                        <ChartDataPoints>
+                                          <ChartDataPoint>
+                                            <ChartDataPointValues>
+                                              <Y>=Sum(Lookup(Fields!CategoryId.Value, Fields!CategoryId.Value, Fields!M120ReturnValue.Value, "CategoryData"))</Y>
+                                            </ChartDataPointValues>
+                                            <ChartDataLabel>
+                                              <Style />
+                                            </ChartDataLabel>
+                                            <Style>
+                                              <Color>CornflowerBlue</Color>
+                                            </Style>
+                                            <ChartMarker>
+                                              <Style />
+                                            </ChartMarker>
+                                            <DataElementOutput>Output</DataElementOutput>
+                                          </ChartDataPoint>
+                                        </ChartDataPoints>
+                                        <Style />
+                                        <ChartEmptyPoints>
+                                          <Style />
+                                          <ChartMarker>
+                                            <Style />
+                                          </ChartMarker>
+                                          <ChartDataLabel>
+                                            <Style />
+                                          </ChartDataLabel>
+                                        </ChartEmptyPoints>
+                                        <CustomProperties>
+                                          <CustomProperty>
+                                            <Name>PointWidth</Name>
+                                            <Value>2</Value>
+                                          </CustomProperty>
+                                        </CustomProperties>
+                                        <ValueAxisName>Primary</ValueAxisName>
+                                        <CategoryAxisName>Primary</CategoryAxisName>
+                                        <ChartSmartLabel>
+                                          <CalloutLineColor>Black</CalloutLineColor>
+                                          <MinMovingDistance>0pt</MinMovingDistance>
+                                        </ChartSmartLabel>
+                                      </ChartSeries>
+                                    </ChartSeriesCollection>
+                                  </ChartData>
+                                  <ChartAreas>
+                                    <ChartArea Name="Default">
+                                      <ChartCategoryAxes>
+                                        <ChartAxis Name="Primary">
+                                          <Visible>False</Visible>
+                                          <Style>
+                                            <Border>
+                                              <Color>Gainsboro</Color>
+                                              <Style>None</Style>
+                                            </Border>
+                                            <FontSize>8pt</FontSize>
+                                            <Color>#5c5c5c</Color>
+                                          </Style>
+                                          <ChartAxisTitle>
+                                            <Caption />
+                                            <Style>
+                                              <FontSize>9pt</FontSize>
+                                              <Color>#5c5c5c</Color>
+                                            </Style>
+                                          </ChartAxisTitle>
+                                          <ChartMajorGridLines>
+                                            <Enabled>False</Enabled>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                              </Border>
+                                            </Style>
+                                          </ChartMajorGridLines>
+                                          <ChartMinorGridLines>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                                <Style>Dotted</Style>
+                                              </Border>
+                                            </Style>
+                                          </ChartMinorGridLines>
+                                          <ChartMajorTickMarks>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                                <Style>None</Style>
+                                              </Border>
+                                            </Style>
+                                          </ChartMajorTickMarks>
+                                          <ChartMinorTickMarks>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                              </Border>
+                                            </Style>
+                                            <Length>0.5</Length>
+                                          </ChartMinorTickMarks>
+                                          <CrossAt>NaN</CrossAt>
+                                          <Minimum>NaN</Minimum>
+                                          <Maximum>NaN</Maximum>
+                                          <ChartAxisScaleBreak>
+                                            <Style />
+                                          </ChartAxisScaleBreak>
+                                        </ChartAxis>
+                                        <ChartAxis Name="Secondary">
+                                          <Style>
+                                            <Border>
+                                              <Color>Gainsboro</Color>
+                                              <Style>None</Style>
+                                            </Border>
+                                            <FontSize>8pt</FontSize>
+                                            <Color>#5c5c5c</Color>
+                                          </Style>
+                                          <ChartAxisTitle>
+                                            <Caption />
+                                            <Style>
+                                              <FontSize>9pt</FontSize>
+                                              <Color>#5c5c5c</Color>
+                                            </Style>
+                                          </ChartAxisTitle>
+                                          <ChartMajorGridLines>
+                                            <Enabled>False</Enabled>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                              </Border>
+                                            </Style>
+                                          </ChartMajorGridLines>
+                                          <ChartMinorGridLines>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                                <Style>Dotted</Style>
+                                              </Border>
+                                            </Style>
+                                          </ChartMinorGridLines>
+                                          <ChartMajorTickMarks>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                                <Style>None</Style>
+                                              </Border>
+                                            </Style>
+                                          </ChartMajorTickMarks>
+                                          <ChartMinorTickMarks>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                              </Border>
+                                            </Style>
+                                            <Length>0.5</Length>
+                                          </ChartMinorTickMarks>
+                                          <CrossAt>NaN</CrossAt>
+                                          <Location>Opposite</Location>
+                                          <Minimum>NaN</Minimum>
+                                          <Maximum>NaN</Maximum>
+                                          <ChartAxisScaleBreak>
+                                            <Style />
+                                          </ChartAxisScaleBreak>
+                                        </ChartAxis>
+                                      </ChartCategoryAxes>
+                                      <ChartValueAxes>
+                                        <ChartAxis Name="Primary">
+                                          <Style>
+                                            <Border>
+                                              <Color>Gainsboro</Color>
+                                              <Style>None</Style>
+                                            </Border>
+                                            <FontSize>8pt</FontSize>
+                                            <Color>#5c5c5c</Color>
+                                          </Style>
+                                          <ChartAxisTitle>
+                                            <Caption />
+                                            <Style>
+                                              <FontSize>9pt</FontSize>
+                                              <Color>#5c5c5c</Color>
+                                            </Style>
+                                          </ChartAxisTitle>
+                                          <ChartMajorGridLines>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                              </Border>
+                                            </Style>
+                                          </ChartMajorGridLines>
+                                          <ChartMinorGridLines>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                                <Style>Dotted</Style>
+                                              </Border>
+                                            </Style>
+                                          </ChartMinorGridLines>
+                                          <ChartMajorTickMarks>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                                <Style>None</Style>
+                                              </Border>
+                                            </Style>
+                                          </ChartMajorTickMarks>
+                                          <ChartMinorTickMarks>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                              </Border>
+                                            </Style>
+                                            <Length>0.5</Length>
+                                          </ChartMinorTickMarks>
+                                          <CrossAt>NaN</CrossAt>
+                                          <Minimum>NaN</Minimum>
+                                          <Maximum>NaN</Maximum>
+                                          <ChartAxisScaleBreak>
+                                            <Style />
+                                          </ChartAxisScaleBreak>
+                                        </ChartAxis>
+                                        <ChartAxis Name="Secondary">
+                                          <Style>
+                                            <Border>
+                                              <Color>Gainsboro</Color>
+                                              <Style>None</Style>
+                                            </Border>
+                                            <FontSize>8pt</FontSize>
+                                            <Color>#5c5c5c</Color>
+                                          </Style>
+                                          <ChartAxisTitle>
+                                            <Caption />
+                                            <Style>
+                                              <FontSize>9pt</FontSize>
+                                              <Color>#5c5c5c</Color>
+                                            </Style>
+                                          </ChartAxisTitle>
+                                          <ChartMajorGridLines>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                              </Border>
+                                            </Style>
+                                          </ChartMajorGridLines>
+                                          <ChartMinorGridLines>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                                <Style>Dotted</Style>
+                                              </Border>
+                                            </Style>
+                                          </ChartMinorGridLines>
+                                          <ChartMajorTickMarks>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                                <Style>None</Style>
+                                              </Border>
+                                            </Style>
+                                          </ChartMajorTickMarks>
+                                          <ChartMinorTickMarks>
+                                            <Style>
+                                              <Border>
+                                                <Color>Gainsboro</Color>
+                                              </Border>
+                                            </Style>
+                                            <Length>0.5</Length>
+                                          </ChartMinorTickMarks>
+                                          <CrossAt>NaN</CrossAt>
+                                          <Location>Opposite</Location>
+                                          <Minimum>NaN</Minimum>
+                                          <Maximum>NaN</Maximum>
+                                          <ChartAxisScaleBreak>
+                                            <Style />
+                                          </ChartAxisScaleBreak>
+                                        </ChartAxis>
+                                      </ChartValueAxes>
+                                      <ChartThreeDProperties>
+                                        <Enabled>true</Enabled>
+                                        <Clustered>true</Clustered>
+                                      </ChartThreeDProperties>
+                                      <Style>
+                                        <BackgroundColor>#00ffffff</BackgroundColor>
+                                        <BackgroundGradientType>None</BackgroundGradientType>
+                                      </Style>
+                                    </ChartArea>
+                                  </ChartAreas>
+                                  <ChartLegends>
+                                    <ChartLegend Name="Default">
+                                      <Hidden>true</Hidden>
+                                      <Style>
+                                        <BackgroundGradientType>None</BackgroundGradientType>
+                                        <FontSize>8pt</FontSize>
+                                      </Style>
+                                      <Position>TopLeft</Position>
+                                      <ChartLegendTitle>
+                                        <Caption />
+                                        <Style>
+                                          <FontSize>8pt</FontSize>
+                                          <FontWeight>Bold</FontWeight>
+                                          <TextAlign>Center</TextAlign>
+                                        </Style>
+                                      </ChartLegendTitle>
+                                      <HeaderSeparatorColor>Black</HeaderSeparatorColor>
+                                      <ColumnSeparatorColor>Black</ColumnSeparatorColor>
+                                    </ChartLegend>
+                                  </ChartLegends>
+                                  <ChartTitles>
+                                    <ChartTitle Name="Default">
+                                      <Caption>FUND PERFORMANCE VS. CATEGORY</Caption>
+                                      <Style>
+                                        <BackgroundGradientType>None</BackgroundGradientType>
+                                        <FontSize>9pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextAlign>Left</TextAlign>
+                                        <VerticalAlign>Top</VerticalAlign>
+                                      </Style>
+                                    </ChartTitle>
+                                    <ChartTitle Name="Title1">
+                                      <Caption>                   1 Yr         3 Yr       5 Yr       10 Yr</Caption>
+                                      <Style>
+                                        <BackgroundGradientType>None</BackgroundGradientType>
+                                        <FontSize>9pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextAlign>Left</TextAlign>
+                                        <VerticalAlign>Top</VerticalAlign>
+                                      </Style>
+                                      <Position>BottomLeft</Position>
+                                    </ChartTitle>
+                                  </ChartTitles>
+                                  <Palette>Pacific</Palette>
+                                  <ChartBorderSkin>
+                                    <Style>
+                                      <BackgroundColor>Gray</BackgroundColor>
+                                      <BackgroundGradientType>None</BackgroundGradientType>
+                                      <Color>White</Color>
+                                    </Style>
+                                  </ChartBorderSkin>
+                                  <ChartNoDataMessage Name="NoDataMessage">
+                                    <Caption>No Data Available</Caption>
+                                    <Style>
+                                      <BackgroundGradientType>None</BackgroundGradientType>
+                                      <FontWeight>Bold</FontWeight>
+                                      <TextAlign>General</TextAlign>
+                                      <VerticalAlign>Top</VerticalAlign>
+                                    </Style>
+                                  </ChartNoDataMessage>
+                                  <DataSetName>FundData</DataSetName>
+                                  <Top>0.02083in</Top>
+                                  <Left>0.09896in</Left>
+                                  <Height>2.16667in</Height>
+                                  <Width>3.10541in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Color>LightGrey</Color>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BackgroundColor>White</BackgroundColor>
+                                    <BackgroundGradientType>None</BackgroundGradientType>
+                                  </Style>
+                                </Chart>
+                                <Rectangle Name="Rectangle3">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Top>2.1875in</Top>
+                                  <Left>0.57243in</Left>
+                                  <Height>0.16667in</Height>
+                                  <Width>0.18875in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BackgroundColor>LightBlue</BackgroundColor>
+                                  </Style>
+                                </Rectangle>
+                                <Textbox Name="Textbox88">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Fund</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox88</rd:DefaultName>
+                                  <Top>2.16667in</Top>
+                                  <Left>0.83062in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>0.5325in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                                <Rectangle Name="Rectangle4">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Top>2.1875in</Top>
+                                  <Left>1.79118in</Left>
+                                  <Height>0.16667in</Height>
+                                  <Width>0.18875in</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BackgroundColor>CornflowerBlue</BackgroundColor>
+                                  </Style>
+                                </Rectangle>
+                                <Textbox Name="Textbox89">
+                                  <CanGrow>true</CanGrow>
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>Category</Value>
+                                          <Style />
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox89</rd:DefaultName>
+                                  <Top>2.15278in</Top>
+                                  <Left>2.09327in</Left>
+                                  <Height>0.25in</Height>
+                                  <Width>1in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingLeft>2pt</PaddingLeft>
+                                    <PaddingRight>2pt</PaddingRight>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>2.63889in</Top>
+                              <Left>4.55083in</Left>
+                              <Height>2.4375in</Height>
+                              <Width>3.30334in</Width>
+                              <ZIndex>22</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Rectangle Name="Rectangle12">
+                              <ReportItems>
+                                <Subreport Name="PortfolioAnalysis">
+                                  <ReportName>PortfolioAnalysis</ReportName>
+                                  <Parameters>
+                                    <Parameter Name="Cusip">
+                                      <Value>=Fields!Cusip.Value</Value>
+                                    </Parameter>
+                                  </Parameters>
+                                  <OmitBorderOnPageBreak>true</OmitBorderOnPageBreak>
+                                  <Height>1.87847in</Height>
+                                  <Width>7.57119in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Subreport>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>5.41667in</Top>
+                              <Left>0.08556in</Left>
+                              <Height>1.87847in</Height>
+                              <Width>7.78126in</Width>
+                              <ZIndex>23</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
                           </ReportItems>
-                          <PageBreak>
-                            <BreakLocation>End</BreakLocation>
-                          </PageBreak>
+                          <KeepTogether>true</KeepTogether>
                           <ZIndex>1</ZIndex>
                           <Style>
                             <Border>
@@ -3213,9 +4191,13 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>FundData</DataSetName>
-            <Top>0.14458in</Top>
-            <Height>7.48959in</Height>
-            <Width>7.4375in</Width>
+            <SortExpressions>
+              <SortExpression>
+                <Value>=Fields!LegalName.Value</Value>
+              </SortExpression>
+            </SortExpressions>
+            <Height>8.39458in</Height>
+            <Width>7.88159in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -3223,58 +4205,14 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>7.76959in</Height>
+        <Height>8.48833in</Height>
         <Style />
       </Body>
-      <Width>8.89666in</Width>
+      <Width>7.89583in</Width>
       <Page>
-        <PageFooter>
-          <Height>0.73958in</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Textbox Name="PlanName">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=First(Fields!PlanName.Value, "PlanDetail")</Value>
-                      <Style />
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>PlanName</rd:DefaultName>
-              <Top>0.29167in</Top>
-              <Left>2.70708in</Left>
-              <Height>0.25in</Height>
-              <Width>3.78125in</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-          </ReportItems>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
-        <LeftMargin>0.5in</LeftMargin>
-        <RightMargin>0.5in</RightMargin>
+        <LeftMargin>0.25in</LeftMargin>
+        <RightMargin>0.25in</RightMargin>
         <TopMargin>0.25in</TopMargin>
-        <BottomMargin>0.25in</BottomMargin>
         <Style />
       </Page>
     </ReportSection>
@@ -3308,6 +4246,52 @@ Public Function ConvertRiskRating(value as integer) as String
 	else if (value = 5) then 
 		return "High"
 	end if
+	return ""
+End Function
+
+Public Function ConvertPortfolioBreakdownType (value as integer) as String
+	Select Case value
+		Case 1
+			return "Cyclical"
+		Case 10
+			return "Government"
+		Case 20
+			return "Municipal"
+		Case 30
+			return "Corporate"
+		Case 40
+			return "Securitized"
+		Case 50
+			return "Cash"
+		Case 60
+			return "Derivatives"
+		Case 101
+			return  "Basic Materials" 
+		Case 102
+			return "Consumer Cyclical" 
+		Case 103
+			return "Financial Services" 
+		Case 104 
+			return "Real Estate" 
+		Case 2
+			return "Defensive" 
+		Case 205
+			return "Consumer Defensive" 
+		Case 206
+			return "Healthcare" 
+		Case 207
+			return "Utilities" 
+		Case 3
+			return "Sensitive" 
+		Case 308
+			return "Communication Services" 
+		Case 309
+			return "Energy" 
+		Case 310
+			return "Industrials" 
+		Case 311
+			return "Technology" 
+	End Select
 	return ""
 End Function</Code>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>

@@ -103,7 +103,18 @@ namespace ReportsApplication1 {
             var msg = $"Problem loading datasets: {ex.Message}";
             MessageBox.Show(msg);
          }
+
+         // Add a handler for SubreportProcessing
+         reportViewer1.LocalReport.SubreportProcessing += new
+            SubreportProcessingEventHandler(DemoSubreportProcessingEventHandler);
          reportViewer1.RefreshReport();
+      }
+      void DemoSubreportProcessingEventHandler(object sender, SubreportProcessingEventArgs e) {
+         var ds = new DataSet();
+         ds.ReadXml(_dataPath, XmlReadMode.ReadSchema);
+         foreach (var name in e.DataSourceNames) {
+            e.DataSources.Add(new ReportDataSource(name, ds.Tables[name]));
+         }
       }
 
       private void SetDataPath() {
