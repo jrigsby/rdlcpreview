@@ -964,7 +964,7 @@
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>8.39458in</Height>
+                  <Height>8.67791in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1402,7 +1402,7 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox13</rd:DefaultName>
-                              <Top>7.3507in</Top>
+                              <Top>7.85292in</Top>
                               <Left>0.05814in</Left>
                               <Height>0.25in</Height>
                               <Width>7.79603in</Width>
@@ -1434,7 +1434,7 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox29</rd:DefaultName>
-                              <Top>7.67014in</Top>
+                              <Top>8.15847in</Top>
                               <Left>0.08431in</Left>
                               <Height>0.25in</Height>
                               <Width>1in</Width>
@@ -1464,7 +1464,7 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>FundFamily</rd:DefaultName>
-                              <Top>7.67014in</Top>
+                              <Top>8.15847in</Top>
                               <Left>1.15376in</Left>
                               <Height>0.25in</Height>
                               <Width>2.47917in</Width>
@@ -1496,9 +1496,9 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>NetExpenseRatio</rd:DefaultName>
-                              <Top>7.98958in</Top>
+                              <Top>8.47791in</Top>
                               <Left>2.44071in</Left>
-                              <Height>0.25in</Height>
+                              <Height>0.2in</Height>
                               <Width>1in</Width>
                               <ZIndex>17</ZIndex>
                               <Style>
@@ -1528,9 +1528,9 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox33</rd:DefaultName>
-                              <Top>7.98958in</Top>
+                              <Top>8.47791in</Top>
                               <Left>0.09696in</Left>
-                              <Height>0.25in</Height>
+                              <Height>0.2in</Height>
                               <Width>2.27431in</Width>
                               <ZIndex>18</ZIndex>
                               <Style>
@@ -1560,7 +1560,7 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>Textbox34</rd:DefaultName>
-                              <Top>7.67014in</Top>
+                              <Top>8.15847in</Top>
                               <Left>5.12799in</Left>
                               <Height>0.25in</Height>
                               <Width>1.11334in</Width>
@@ -1594,7 +1594,7 @@
                                 </Paragraph>
                               </Paragraphs>
                               <rd:DefaultName>InceptionDate</rd:DefaultName>
-                              <Top>7.67014in</Top>
+                              <Top>8.15847in</Top>
                               <Left>6.31077in</Left>
                               <Height>0.25in</Height>
                               <Width>1.33333in</Width>
@@ -4138,8 +4138,8 @@
                                     </Parameter>
                                   </Parameters>
                                   <OmitBorderOnPageBreak>true</OmitBorderOnPageBreak>
-                                  <Height>1.87847in</Height>
-                                  <Width>7.57119in</Width>
+                                  <Height>2.39458in</Height>
+                                  <Width>7.66964in</Width>
                                   <Style>
                                     <Border>
                                       <Style>None</Style>
@@ -4150,8 +4150,8 @@
                               <KeepTogether>true</KeepTogether>
                               <Top>5.41667in</Top>
                               <Left>0.08556in</Left>
-                              <Height>1.87847in</Height>
-                              <Width>7.78126in</Width>
+                              <Height>2.39458in</Height>
+                              <Width>7.66964in</Width>
                               <ZIndex>23</ZIndex>
                               <Style>
                                 <Border>
@@ -4196,7 +4196,7 @@
                 <Value>=Fields!LegalName.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Height>8.39458in</Height>
+            <Height>8.67791in</Height>
             <Width>7.88159in</Width>
             <Style>
               <Border>
@@ -4205,7 +4205,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>8.48833in</Height>
+        <Height>8.67791in</Height>
         <Style />
       </Body>
       <Width>7.89583in</Width>
