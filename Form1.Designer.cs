@@ -30,10 +30,10 @@
         {
          this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
          this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-         this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.assignDataFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.assignReportFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+         this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
          this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
          this.menuStrip1.SuspendLayout();
          this.SuspendLayout();
@@ -58,13 +58,6 @@
          this.menuStrip1.TabIndex = 1;
          this.menuStrip1.Text = "menuStrip1";
          // 
-         // reloadToolStripMenuItem
-         // 
-         this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
-         this.reloadToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-         this.reloadToolStripMenuItem.Text = "Reload";
-         this.reloadToolStripMenuItem.Click += new System.EventHandler(this.reloadToolStripMenuItem_Click);
-         // 
          // fileToolStripMenuItem
          // 
          this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -77,16 +70,23 @@
          // assignDataFileToolStripMenuItem
          // 
          this.assignDataFileToolStripMenuItem.Name = "assignDataFileToolStripMenuItem";
-         this.assignDataFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.assignDataFileToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
          this.assignDataFileToolStripMenuItem.Text = "Assign &Data File";
          this.assignDataFileToolStripMenuItem.Click += new System.EventHandler(this.assignDataFileToolStripMenuItem_Click);
          // 
          // assignReportFileToolStripMenuItem
          // 
          this.assignReportFileToolStripMenuItem.Name = "assignReportFileToolStripMenuItem";
-         this.assignReportFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+         this.assignReportFileToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
          this.assignReportFileToolStripMenuItem.Text = "Assign &Report File";
          this.assignReportFileToolStripMenuItem.Click += new System.EventHandler(this.assignReportFileToolStripMenuItem_Click);
+         // 
+         // reloadToolStripMenuItem
+         // 
+         this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
+         this.reloadToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+         this.reloadToolStripMenuItem.Text = "Refresh";
+         this.reloadToolStripMenuItem.Click += new System.EventHandler(this.reloadToolStripMenuItem_Click);
          // 
          // openFileDialog1
          // 
