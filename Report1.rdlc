@@ -950,6 +950,122 @@
         <rd:TableName>PortfolioBreakdown</rd:TableName>
       </rd:DataSetInfo>
     </DataSet>
+    <DataSet Name="AccentColor1">
+      <Query>
+        <DataSourceName>FundFactSheet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="R">
+          <DataField>R</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="G">
+          <DataField>G</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="B">
+          <DataField>B</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>FundFactSheet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\FundFactSheet.xsd</rd:SchemaPath>
+        <rd:TableName>AccentColor1</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="SystemUser">
+      <Query>
+        <DataSourceName>FundFactSheet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="UserId">
+          <DataField>UserId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CompanyId">
+          <DataField>CompanyId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WorkEmail">
+          <DataField>WorkEmail</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OtherEmail">
+          <DataField>OtherEmail</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HomePhone">
+          <DataField>HomePhone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CellPhone">
+          <DataField>CellPhone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>FundFactSheet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\FundFactSheet.xsd</rd:SchemaPath>
+        <rd:TableName>SystemUser</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="Theme">
+      <Query>
+        <DataSourceName>FundFactSheet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="LogoUrl">
+          <DataField>LogoUrl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CoverLogoUrl">
+          <DataField>CoverLogoUrl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>FundFactSheet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\FundFactSheet.xsd</rd:SchemaPath>
+        <rd:TableName>Theme</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="ReportOptions">
+      <Query>
+        <DataSourceName>FundFactSheet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PageNum">
+          <DataField>PageNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ShowPageNum">
+          <DataField>ShowPageNum</DataField>
+          <rd:TypeName>System.Char</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>FundFactSheet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\johnr.JR-XPS89\source\repos\rdlcpreview\FundFactSheet.xsd</rd:SchemaPath>
+        <rd:TableName>ReportOptions</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -1251,7 +1367,6 @@
                               <ZIndex>9</ZIndex>
                               <Style>
                                 <Border>
-                                  <Color>LimeGreen</Color>
                                   <Style>Solid</Style>
                                   <Width>2pt</Width>
                                 </Border>
@@ -1328,7 +1443,10 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>RISK AND RETURN</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>White</Color>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1346,6 +1464,7 @@
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
+                                <BackgroundColor>=Variables!AccentColor1.Value</BackgroundColor>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -1360,7 +1479,10 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>PORTFOLIO ANALYSIS</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>White</Color>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1378,7 +1500,7 @@
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
-                                <BackgroundColor>Lime</BackgroundColor>
+                                <BackgroundColor>=Variables!AccentColor1.Value</BackgroundColor>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -1393,7 +1515,10 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>OPERATIONS &amp; EXPENSES</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>White</Color>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -1411,6 +1536,7 @@
                                 <Border>
                                   <Style>None</Style>
                                 </Border>
+                                <BackgroundColor>=Variables!AccentColor1.Value</BackgroundColor>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -4210,6 +4336,91 @@
       </Body>
       <Width>7.89583in</Width>
       <Page>
+        <PageFooter>
+          <Height>0.59167in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="CompanyName">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!CompanyName.Value, "SystemUser")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>CompanyName</rd:DefaultName>
+              <Top>0.175in</Top>
+              <Left>0.3425in</Left>
+              <Height>0.25in</Height>
+              <Width>2.23958in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Image Name="Logo">
+              <Source>External</Source>
+              <Value>=First(Fields!LogoUrl.Value, "Theme")</Value>
+              <Top>0.06944in</Top>
+              <Left>5.07167in</Left>
+              <Height>0.5in</Height>
+              <Width>1.9375in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="AsOfDate">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!AsOfDate.Value, "FundData")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>AsOfDate</rd:DefaultName>
+              <Top>0.175in</Top>
+              <Left>2.92583in</Left>
+              <Height>0.25in</Height>
+              <Width>1in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <LeftMargin>0.25in</LeftMargin>
         <RightMargin>0.25in</RightMargin>
         <TopMargin>0.25in</TopMargin>
@@ -4293,7 +4504,40 @@ Public Function ConvertPortfolioBreakdownType (value as integer) as String
 			return "Technology" 
 	End Select
 	return ""
-End Function</Code>
+End Function
+
+Public Function GetHexColor(ByVal R As Integer, ByVal G As Integer, ByVal B As Integer) As String
+	Dim sR As String = "FF" 
+	Dim sG As String = "FF" 
+	Dim sB As String = "FF" 
+	Dim hR As String = Microsoft.VisualBasic.Hex(R) 
+
+	If hR.Length = 1 Then 
+		sR = "0" &amp; hR 
+	Else 
+		sR = hR 
+	End If 
+
+	Dim hG As String = Microsoft.VisualBasic.Hex(G) 
+	If Len(hG) = 1 Then 
+		sG = "0" &amp; hG 
+	Else 
+		sG = hG 
+	End If 
+
+	Dim hB As String = Microsoft.VisualBasic.Hex(B) 
+	If Len(hB) = 1 Then 
+		sB = "0" &amp; hB 
+	Else 
+		sB = hB 
+	End If 
+	Return "#" &amp; sR &amp; sG &amp; sB 
+End Function </Code>
+  <Variables>
+    <Variable Name="AccentColor1">
+      <Value>=Code.GetHexColor(CInt(AVG(Fields!R.Value, "AccentColor1")),CInt(AVG(Fields!G.Value, "AccentColor1")),CInt(AVG(Fields!B.Value, "AccentColor1")))</Value>
+    </Variable>
+  </Variables>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0241206d-3936-48d0-a005-203394f4a16e</rd:ReportID>
 </Report>

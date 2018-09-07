@@ -21,6 +21,8 @@ namespace ReportsApplication1 {
          openFileDialog1.Multiselect = false;
 
          LoadReport();
+         // for external image
+         
          reportViewer1.RefreshReport();
       }
 
@@ -85,6 +87,7 @@ namespace ReportsApplication1 {
 
          reportViewer1.ProcessingMode = ProcessingMode.Local;
          reportViewer1.Reset();
+         reportViewer1.LocalReport.EnableExternalImages = true;
          reportViewer1.LocalReport.ReportPath = _reportPath;
          reportViewer1.LocalReport.DataSources.Clear();
 
