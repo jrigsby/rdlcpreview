@@ -104,13 +104,13 @@
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
-    <None Include="FundFactSheet.xsc">
+    <None Include="Data\FundFactSheet.xsc">
       <DependentUpon>FundFactSheet.xsd</DependentUpon>
     </None>
-    <None Include="FundFactSheet.xsd">
+    <None Include="Data\FundFactSheet.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="FundFactSheet.xss">
+    <None Include="Data\FundFactSheet.xss">
       <DependentUpon>FundFactSheet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -131,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="Data\FundFactSheet.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

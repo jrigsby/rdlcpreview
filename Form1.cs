@@ -20,7 +20,16 @@ namespace ReportsApplication1 {
          openFileDialog1.InitialDirectory = _folder;
          openFileDialog1.FileName = "";
          openFileDialog1.Multiselect = false;
-
+         if (string.IsNullOrEmpty(Properties.Settings.Default.DefaultDataPath)) {
+            Properties.Settings.Default.DefaultDataPath = AppDomain.CurrentDomain.BaseDirectory + "Data";
+         }
+         if (string.IsNullOrEmpty(Properties.Settings.Default.DefaultReportPath)) {
+            Properties.Settings.Default.DefaultReportPath = AppDomain.CurrentDomain.BaseDirectory;
+         }
+         _lastDataFolder = Properties.Settings.Default.DefaultDataPath;
+         _lastReportFolder = Properties.Settings.Default.DefaultReportPath;
+         Properties.Settings.Default.Save();
+         reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
          LoadReport();
       }
 
@@ -124,6 +133,9 @@ namespace ReportsApplication1 {
          _dataPath = openFileDialog1.FileName;
          var fi = new System.IO.FileInfo(openFileDialog1.FileName);
          _lastDataFolder = fi.DirectoryName;
+         Properties.Settings.Default.DefaultDataPath = _lastDataFolder;
+         Properties.Settings.Default.Save();
+
          LoadReport();
       }
 
@@ -136,6 +148,8 @@ namespace ReportsApplication1 {
          _reportPath = openFileDialog1.FileName;
          var fi = new System.IO.FileInfo(openFileDialog1.FileName);
          _lastReportFolder = fi.DirectoryName;
+         Properties.Settings.Default.DefaultReportPath = _lastReportFolder;
+         Properties.Settings.Default.Save();
          LoadReport();
       }
       #endregion
