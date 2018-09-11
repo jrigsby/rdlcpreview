@@ -70,24 +70,7 @@ namespace ReportsApplication1 {
             return;
          }
 
-         //add namespaces so that xml may be traversed
-         //http://microsoft.public.sqlserver.reportingsvcs.narkive.com/U1JHd8Nj/unable-to-parse-rdlc-with-xpath
-         var ns = new XmlNamespaceManager(xml.NameTable);
-         //midway through editing a file the namespace changed, I had loaded a new version of VS so I assume thats it.
-         //point is I couldn't count on default namespace being the same, it switched to 2016/01 so now loading dynamically
-         //and switching from ns to call it default
-         //ns.AddNamespace("ns", "http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition");
-         // ns.AddNamespace("rd", "http://schemas.microsoft.com/SQLServer/reporting/reportdesigner");
-         foreach (XmlAttribute nsdef in report.Attributes) {
-            var attributeName = nsdef.Name;
-            if (!attributeName.StartsWith("xmlns")) continue;
-            if (attributeName.Contains(":")) {
-               ns.AddNamespace(attributeName.Split(':')[1], nsdef.InnerText);
-            }
-            else {
-               ns.AddNamespace("default", nsdef.InnerText);
-            }
-         }
+         var ns = ParseReportNamespace(xml);
 
          reportViewer1.ProcessingMode = ProcessingMode.Local;
          reportViewer1.Reset();
@@ -112,16 +95,71 @@ namespace ReportsApplication1 {
          }
 
          // Add a handler for Subreport Processing
-         reportViewer1.LocalReport.SubreportProcessing += new
-            SubreportProcessingEventHandler(DemoSubreportProcessingEventHandler);
+         // ReSharper disable once RedundantDelegateCreation
+         reportViewer1.LocalReport.SubreportProcessing += new SubreportProcessingEventHandler(SubreportProcessingEventHandler);
          reportViewer1.RefreshReport();
       }
-      void DemoSubreportProcessingEventHandler(object sender, SubreportProcessingEventArgs e) {
+
+      //Every time a subreport is called it will go through this method to assign the table from the
+      //source data xml to create report datasets.
+      void SubreportProcessingEventHandler(object sender, SubreportProcessingEventArgs e) {
+         //TODO load from cache for this iteration of report processing
          var ds = new DataSet();
          ds.ReadXml(_dataPath, XmlReadMode.ReadSchema);
-         foreach (var name in e.DataSourceNames) {
-            e.DataSources.Add(new ReportDataSource(name, ds.Tables[name]));
+
+         //in this project the subreport is expected to be in same folder as the parent and should not contain the file extension
+         //however this code should work with different paths, relative or absolute with or without extension
+
+         var subReportPath = e.ReportPath;
+
+         if (!System.IO.Path.IsPathRooted(e.ReportPath) && sender is LocalReport) {
+            //report path not specifically identified
+            var parentPath = ((LocalReport)sender).ReportPath;
+            var parentFolder = System.IO.Path.GetDirectoryName(parentPath);
+            subReportPath = subReportPath.StartsWith("\\") ? $"{parentFolder}{subReportPath}" : $"{parentFolder}\\{subReportPath}";
          }
+
+         if (!subReportPath.ToLower().EndsWith(".rdlc")) {
+            subReportPath = $"{subReportPath}.rdlc";
+         }
+
+         //TODO load from cache for this iteration of report processing
+         var xml = new XmlDocument();
+         xml.Load(subReportPath);
+         if (xml.DocumentElement is null) throw new Exception("Report document empty.");
+
+         var ns = ParseReportNamespace(xml);
+
+         //go through the sub report datasets and associate report dataset to source data
+         foreach (var name in e.DataSourceNames) {
+            var tableName = xml.SelectSingleNode($"//default:Report/default:DataSets/default:DataSet[@Name='{name}']/rd:DataSetInfo/rd:TableName", ns)?.InnerText;
+            if(string.IsNullOrEmpty(tableName)) throw new Exception($"Dataset table name not defined for {name}.");
+            e.DataSources.Add(new ReportDataSource(name, ds.Tables[tableName]));
+         }
+      }
+
+      private XmlNamespaceManager ParseReportNamespace(XmlDocument xml) {
+         if (xml.DocumentElement is null) throw new Exception("Report document empty.");
+         //add namespaces so that xml may be traversed
+         //http://microsoft.public.sqlserver.reportingsvcs.narkive.com/U1JHd8Nj/unable-to-parse-rdlc-with-xpath
+         var ns = new XmlNamespaceManager(xml.NameTable);
+         //midway through editing a file the namespace changed, I had loaded a new version of VS so I assume thats it.
+         //point is I couldn't count on default namespace being the same, it switched to 2016/01 so now loading dynamically
+         //and switching from ns to call it default
+         //ns.AddNamespace("ns", "http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition");
+         // ns.AddNamespace("rd", "http://schemas.microsoft.com/SQLServer/reporting/reportdesigner");
+         foreach (XmlAttribute nsdef in xml.DocumentElement.Attributes) {
+            var attributeName = nsdef.Name;
+            if (!attributeName.StartsWith("xmlns")) continue;
+            if (attributeName.Contains(":")) {
+               ns.AddNamespace(attributeName.Split(':')[1], nsdef.InnerText);
+            }
+            else {
+               ns.AddNamespace("default", nsdef.InnerText);
+            }
+         }
+
+         return ns;
       }
 
       private void SetDataPath() {
@@ -129,10 +167,14 @@ namespace ReportsApplication1 {
          openFileDialog1.Title = @"Please select a data file to preview.";
          openFileDialog1.CheckFileExists = true;
          openFileDialog1.InitialDirectory = _lastDataFolder;
+
          if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
+
          _dataPath = openFileDialog1.FileName;
+
          var fi = new System.IO.FileInfo(openFileDialog1.FileName);
          _lastDataFolder = fi.DirectoryName;
+
          Properties.Settings.Default.DefaultDataPath = _lastDataFolder;
          Properties.Settings.Default.Save();
 
@@ -144,12 +186,17 @@ namespace ReportsApplication1 {
          openFileDialog1.Title = @"Please select a report file to preview.";
          openFileDialog1.CheckFileExists = true;
          openFileDialog1.InitialDirectory = _lastReportFolder;
+
          if (openFileDialog1.ShowDialog() != DialogResult.OK) return;
+
          _reportPath = openFileDialog1.FileName;
+
          var fi = new System.IO.FileInfo(openFileDialog1.FileName);
          _lastReportFolder = fi.DirectoryName;
+
          Properties.Settings.Default.DefaultReportPath = _lastReportFolder;
          Properties.Settings.Default.Save();
+
          LoadReport();
       }
       #endregion
